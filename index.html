@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OpenWeatherMap API</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1>OpenWeatherMap API</h1>
+
+  <form class="pure-form">
+    <input id="searchField" class="input" placeholder="Search a city for weather"></input>
+    <button id="searchBtn" class="pure-button pure-button-primary">Search</button>
+  </form>
+
+  <div id="result"></div>
+
+  <!-- template -->
+  <script class="weather-result-template" type="text/x-handlebars-template">
+    <h3>The weather in {{city}} is {{temp}} Celsius</h3>
+  </script>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>  
+  <script src="js/main.js"></script>
+</body>
+</html>
